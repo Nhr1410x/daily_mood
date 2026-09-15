@@ -72,93 +72,31 @@
 
   <main>
     <!-- ════════════════════════════════════════
-         (2) HERO SECTION
+         (2) HERO SECTION — Style Template Editorial
          ════════════════════════════════════════ -->
-    <section class="hero" id="hero">
-      <!-- Left Column -->
-      <div class="hero-col-model">
-        <img src="assets/images/left.jpg" alt="Người mẫu trong trang phục Daily Mood" class="hero-image" loading="eager">
-        <div class="hero-shadow-left"></div>
+    <section class="hero" id="hero" aria-label="Bộ sưu tập Daily Mood - IVY moda">
+      <!-- SEO & Screen Reader Accessibility -->
+      <div class="sr-only">
+        <h1>DAILY Mood — Bộ Sưu Tập Mới | IVY moda</h1>
+        <p>SLOW DOWN. DRESS BEAUTIFULLY.</p>
+        <p>Những khoảnh khắc bình yên giữa nhịp sống thành thị.</p>
+        <span>Spring Summer 2026 Collection</span>
       </div>
 
-      <!-- Center Column -->
-      <div class="hero-col-center">
-        <div class="leaf-shadow-overlay">
-          <svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-            <g opacity="0.08" fill="#2D2D1B">
-              <path d="M620 -20 Q580 80, 520 180 Q460 280, 380 380 Q320 450, 280 520" stroke="#2D2D1B" stroke-width="2.5" fill="none"/>
-              <ellipse cx="580" cy="60" rx="35" ry="14" transform="rotate(-55 580 60)"/>
-              <ellipse cx="550" cy="120" rx="40" ry="15" transform="rotate(-45 550 120)"/>
-              <ellipse cx="510" cy="190" rx="38" ry="13" transform="rotate(-35 510 190)"/>
-              <ellipse cx="480" cy="250" rx="42" ry="15" transform="rotate(-50 480 250)"/>
-              <ellipse cx="440" cy="310" rx="36" ry="12" transform="rotate(-40 440 310)"/>
-              <ellipse cx="400" cy="370" rx="40" ry="14" transform="rotate(-30 400 370)"/>
-              <ellipse cx="360" cy="420" rx="34" ry="12" transform="rotate(-55 360 420)"/>
-              <ellipse cx="330" cy="470" rx="38" ry="13" transform="rotate(-45 330 470)"/>
-              <ellipse cx="600" cy="40" rx="30" ry="12" transform="rotate(35 600 40)"/>
-              <ellipse cx="565" cy="100" rx="35" ry="13" transform="rotate(45 565 100)"/>
-              <ellipse cx="530" cy="160" rx="32" ry="11" transform="rotate(40 530 160)"/>
-              <ellipse cx="495" cy="220" rx="36" ry="13" transform="rotate(50 495 220)"/>
-              <ellipse cx="455" cy="290" rx="33" ry="12" transform="rotate(35 455 290)"/>
-              <ellipse cx="420" cy="350" rx="37" ry="13" transform="rotate(45 420 350)"/>
-            </g>
-            <g opacity="0.06" fill="#2D2D1B">
-              <path d="M-20 400 Q80 420, 180 460 Q260 500, 320 560" stroke="#2D2D1B" stroke-width="2" fill="none"/>
-              <ellipse cx="60" cy="410" rx="32" ry="12" transform="rotate(15 60 410)"/>
-              <ellipse cx="130" cy="435" rx="36" ry="13" transform="rotate(20 130 435)"/>
-              <ellipse cx="200" cy="465" rx="34" ry="12" transform="rotate(25 200 465)"/>
-              <ellipse cx="260" cy="500" rx="38" ry="14" transform="rotate(30 260 500)"/>
-              <ellipse cx="40" cy="420" rx="28" ry="10" transform="rotate(-25 40 420)"/>
-              <ellipse cx="110" cy="448" rx="32" ry="11" transform="rotate(-20 110 448)"/>
-              <ellipse cx="180" cy="478" rx="30" ry="11" transform="rotate(-15 180 478)"/>
-            </g>
-            <g opacity="0.05" fill="#2D2D1B">
-              <ellipse cx="650" cy="600" rx="28" ry="10" transform="rotate(-30 650 600)"/>
-              <ellipse cx="700" cy="750" rx="32" ry="11" transform="rotate(20 700 750)"/>
-              <ellipse cx="150" cy="800" rx="26" ry="9" transform="rotate(-45 150 800)"/>
-              <ellipse cx="550" cy="850" rx="30" ry="10" transform="rotate(35 550 850)"/>
-              <ellipse cx="100" cy="200" rx="24" ry="9" transform="rotate(-20 100 200)"/>
-            </g>
-          </svg>
-        </div>
+      <div class="hero-stage">
+        <img 
+          src="assets/images/template.jpg" 
+          alt="DAILY MOOD — Bộ sưu tập Xuân Hè 2026 từ IVY moda. Slow down. Dress beautifully." 
+          class="hero-banner-img"
+          loading="eager"
+          fetchpriority="high"
+        >
 
-        <div class="hero-content">
-          <div class="animate-entry delay-100 hero-brand">
-            IVY moda
-          </div>
-          
-          <div class="animate-entry delay-200 title-stack">
-            <h1 class="title-daily">DAILY</h1>
-            <span class="title-mood" aria-hidden="true">Mood</span>
-          </div>
-
-          <div class="animate-entry delay-300 hero-subtitle">
-            Slow down. Dress beautifully.
-          </div>
-
-          <div class="animate-entry delay-400 hero-desc">
-            Những khoảnh khắc bình yên giữa nhịp sống thành thị.
-          </div>
-
-          <div class="animate-entry delay-500">
-            <a href="#moods" class="hero-cta">
-              <span>Khám phá Daily Mood</span>
-              <span class="cta-arrow">&rarr;</span>
-            </a>
-          </div>
-
-          <div class="animate-entry delay-600">
-            <span class="hero-season">
-              Spring Summer 2026 Collection
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="hero-col-model">
-        <img src="assets/images/right.jpg" alt="Người mẫu trong trang phục thanh lịch" class="hero-image" loading="eager">
-        <div class="hero-shadow-right"></div>
+        <!-- Interactive Hotspot Button directly on the CTA position -->
+        <a href="white-verse.html" class="hero-cta-btn" id="hero-cta-button" aria-label="Khám phá bộ sưu tập Daily Mood - Áo kiểu White Verse">
+          <span class="hero-cta-label">Khám phá Daily Mood</span>
+          <span class="hero-cta-arrow" aria-hidden="true">&rarr;</span>
+        </a>
       </div>
     </section>
 
@@ -354,6 +292,19 @@
         </div>
 
         <div class="products-grid reveal">
+          <!-- Featured Star Product: Áo kiểu White Verse -->
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <img src="assets/images/wv-1.webp" alt="Áo kiểu White Verse — IVY moda" loading="lazy">
+              <span class="product-badge" style="background-color: #A68B6A; color: #fff;">Đặc quyền BST</span>
+              <div class="product-overlay">
+                <a href="white-verse.html" class="product-overlay-btn">Xem chi tiết</a>
+              </div>
+            </div>
+            <div class="product-name"><a href="white-verse.html" style="color: inherit; text-decoration: none;">Áo Kiểu White Verse</a></div>
+            <div class="product-price">1.290.000₫</div>
+          </div>
+
           <!-- Product 1 -->
           <div class="product-card">
             <div class="product-image-wrap">
