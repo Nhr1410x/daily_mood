@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Áo Blazer Dáng Suông",
+      "price": 2590000,
+      "priceFormatted": "2.590.000₫",
+      "image": "assets/images/product-1.jpg",
+      "badge": "Mới",
+      "alt": "Áo blazer đen dáng suông, phom rộng thanh lịch"
+    },
+    {
+      "id": 2,
+      "name": "Quần Suông Ống Rộng",
+      "price": 1290000,
+      "priceFormatted": "1.290.000₫",
+      "image": "assets/images/product-2.jpg",
+      "badge": null,
+      "alt": "Quần suông ống rộng đen, chất liệu mềm rũ"
+    },
+    {
+      "id": 3,
+      "name": "Áo Lụa Cổ Tròn",
+      "price": 990000,
+      "priceFormatted": "990.000₫",
+      "image": "assets/images/product-3.jpg",
+      "badge": null,
+      "alt": "Áo lụa cổ tròn đen, tay ngắn thanh lịch"
+    },
+    {
+      "id": 4,
+      "name": "Túi Xách Da Cấu Trúc",
+      "price": 1890000,
+      "priceFormatted": "1.890.000₫",
+      "image": "assets/images/product-4.jpg",
+      "badge": "Bán chạy",
+      "alt": "Túi xách da đen cấu trúc, thiết kế sang trọng"
+    },
+    {
+      "id": 5,
+      "name": "Đầm Midi Cổ Chữ V",
+      "price": 1790000,
+      "priceFormatted": "1.790.000₫",
+      "image": "assets/images/product-5.jpg",
+      "badge": "Mới",
+      "alt": "Đầm midi cổ chữ V, tay bồng nhẹ nhàng"
+    },
+    {
+      "id": 6,
+      "name": "Áo Khoác Dạ Dài",
+      "price": 3290000,
+      "priceFormatted": "3.290.000₫",
+      "image": "assets/images/product-6.jpg",
+      "badge": null,
+      "alt": "Áo khoác dạ dài đen, cổ áo ve cổ điển"
+    },
+    {
+      "id": 7,
+      "name": "Giày Cao Gót Mũi Nhọn",
+      "price": 1490000,
+      "priceFormatted": "1.490.000₫",
+      "image": "assets/images/product-1.jpg",
+      "badge": null,
+      "alt": "Giày cao gót mũi nhọn đen, gót thanh 7cm"
+    },
+    {
+      "id": 8,
+      "name": "Áo Len Cashmere Blend",
+      "price": 1690000,
+      "priceFormatted": "1.690.000₫",
+      "image": "assets/images/product-3.jpg",
+      "badge": "Bán chạy",
+      "alt": "Áo len cashmere blend, mềm mại và ấm áp"
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "hs-1",
+      "label": "Áo Blazer Dáng Suông",
+      "price": "2.590.000₫",
+      "image": "assets/images/product-1.jpg",
+      "top": "22%",
+      "left": "48%"
+    },
+    {
+      "id": "hs-2",
+      "label": "Quần Suông Ống Rộng",
+      "price": "1.290.000₫",
+      "image": "assets/images/product-2.jpg",
+      "top": "58%",
+      "left": "45%"
+    },
+    {
+      "id": "hs-3",
+      "label": "Túi Xách Da Cấu Trúc",
+      "price": "1.890.000₫",
+      "image": "assets/images/product-4.jpg",
+      "top": "48%",
+      "left": "32%"
+    }
+  ]
+}

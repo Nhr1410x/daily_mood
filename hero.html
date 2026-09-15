@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAILY MOOD — Hero Section | IVY moda</title>
+  <meta name="description" content="Bộ sưu tập DAILY MOOD — Spring Summer 2026 từ IVY moda">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ivory':   '#F5F4F0',
+            'ink':     '#1A1A1A',
+            'brown':   '#A68B6A',
+            'brown-light': '#C4A882',
+            'warm':    '#EFE9E1',
+            'muted':   '#8C8C8C',
+          },
+          fontFamily: {
+            'display': ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            'body':    ['"Inter"', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            'script':  ['"Pinyon Script"', 'cursive'],
+          },
+          letterSpacing: {
+            'editorial': '0.25em',
+            'luxury':    '0.35em',
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── Leaf shadow overlay — SVG-based botanical shadow ── */
+    .leaf-shadow-overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .leaf-shadow-overlay svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.55;
+      filter: blur(1.5px);
+    }
+
+    /* ── Typography: "Mood" script overlap on "DAILY" ── */
+    .title-stack {
+      position: relative;
+      display: inline-block;
+    }
+
+    .title-daily {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 0.95;
+      color: #1A1A1A;
+    }
+
+    .title-mood {
+      font-family: 'Pinyon Script', cursive;
+      color: #A68B6A;
+      position: absolute;
+      left: 50%;
+      bottom: -5%;
+      transform: translateX(-42%) rotate(-4deg);
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    /* ── Separator lines ── */
+    .line-separator::before,
+    .line-separator::after {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background-color: #8C8C8C;
+      vertical-align: middle;
+    }
+    .line-separator::before { margin-right: 16px; }
+    .line-separator::after  { margin-left: 16px; }
+
+    /* ── CTA arrow animation ── */
+    .cta-arrow {
+      display: inline-block;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cta-btn:hover .cta-arrow {
+      transform: translateX(6px);
+    }
+
+    /* ── Image columns — subtle ken burns ── */
+    .model-image {
+      transition: transform 8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .model-col:hover .model-image {
+      transform: scale(1.04);
+    }
+
+    /* ── Smooth entry animation ── */
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-entry {
+      opacity: 0;
+      animation: fadeSlideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.35s; }
+    .delay-400 { animation-delay: 0.5s; }
+    .delay-500 { animation-delay: 0.65s; }
+    .delay-600 { animation-delay: 0.8s; }
+    .delay-700 { animation-delay: 0.95s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animate-entry {
+        opacity: 1;
+        animation: none;
+      }
+      .model-image {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-ivory font-body antialiased">
+
+  <!-- ════════════════════════════════════════════════════
+       HERO SECTION — 3-column editorial layout
+       ════════════════════════════════════════════════════ -->
+  <section class="relative w-full h-screen min-h-[600px] max-h-[1200px] flex overflow-hidden">
+
+    <!-- ── Left Column: Model Image (25%) ── -->
+    <div class="model-col hidden lg:block w-1/4 relative overflow-hidden flex-shrink-0">
+      <img
+        src="assets/images/left.jpg"
+        alt="Người mẫu trong trang phục Daily Mood — phong cách thanh lịch bên cửa gỗ nan"
+        class="model-image absolute inset-0 w-full h-full object-cover object-center"
+        loading="eager"
+      >
+      <!-- Subtle inner shadow for depth -->
+      <div class="absolute inset-0 shadow-[inset_-20px_0_40px_-10px_rgba(0,0,0,0.08)]"></div>
+    </div>
+
+    <!-- ── Center Column: Content (50% desktop / 100% mobile) ── -->
+    <div class="relative flex-1 lg:w-1/2 bg-ivory flex flex-col items-center justify-center px-6 sm:px-10 lg:px-16">
+
+      <!-- Leaf shadow overlay -->
+      <div class="leaf-shadow-overlay">
+        <svg viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <!-- Branch 1: top-right diagonal -->
+          <g opacity="0.08" fill="#2D2D1B">
+            <!-- Main stem -->
+            <path d="M620 -20 Q580 80, 520 180 Q460 280, 380 380 Q320 450, 280 520" stroke="#2D2D1B" stroke-width="2.5" fill="none"/>
+            <!-- Leaves on branch 1 -->
+            <ellipse cx="580" cy="60" rx="35" ry="14" transform="rotate(-55 580 60)"/>
+            <ellipse cx="550" cy="120" rx="40" ry="15" transform="rotate(-45 550 120)"/>
+            <ellipse cx="510" cy="190" rx="38" ry="13" transform="rotate(-35 510 190)"/>
+            <ellipse cx="480" cy="250" rx="42" ry="15" transform="rotate(-50 480 250)"/>
+            <ellipse cx="440" cy="310" rx="36" ry="12" transform="rotate(-40 440 310)"/>
+            <ellipse cx="400" cy="370" rx="40" ry="14" transform="rotate(-30 400 370)"/>
+            <ellipse cx="360" cy="420" rx="34" ry="12" transform="rotate(-55 360 420)"/>
+            <ellipse cx="330" cy="470" rx="38" ry="13" transform="rotate(-45 330 470)"/>
+            <!-- Opposite-side leaves -->
+            <ellipse cx="600" cy="40" rx="30" ry="12" transform="rotate(35 600 40)"/>
+            <ellipse cx="565" cy="100" rx="35" ry="13" transform="rotate(45 565 100)"/>
+            <ellipse cx="530" cy="160" rx="32" ry="11" transform="rotate(40 530 160)"/>
+            <ellipse cx="495" cy="220" rx="36" ry="13" transform="rotate(50 495 220)"/>
+            <ellipse cx="455" cy="290" rx="33" ry="12" transform="rotate(35 455 290)"/>
+            <ellipse cx="420" cy="350" rx="37" ry="13" transform="rotate(45 420 350)"/>
+          </g>
+
+          <!-- Branch 2: left side, lower -->
+          <g opacity="0.06" fill="#2D2D1B">
+            <path d="M-20 400 Q80 420, 180 460 Q260 500, 320 560" stroke="#2D2D1B" stroke-width="2" fill="none"/>
+            <ellipse cx="60" cy="410" rx="32" ry="12" transform="rotate(15 60 410)"/>
+            <ellipse cx="130" cy="435" rx="36" ry="13" transform="rotate(20 130 435)"/>
+            <ellipse cx="200" cy="465" rx="34" ry="12" transform="rotate(25 200 465)"/>
+            <ellipse cx="260" cy="500" rx="38" ry="14" transform="rotate(30 260 500)"/>
+            <ellipse cx="40" cy="420" rx="28" ry="10" transform="rotate(-25 40 420)"/>
+            <ellipse cx="110" cy="448" rx="32" ry="11" transform="rotate(-20 110 448)"/>
+            <ellipse cx="180" cy="478" rx="30" ry="11" transform="rotate(-15 180 478)"/>
+          </g>
+
+          <!-- Scattered individual leaves -->
+          <g opacity="0.05" fill="#2D2D1B">
+            <ellipse cx="650" cy="600" rx="28" ry="10" transform="rotate(-30 650 600)"/>
+            <ellipse cx="700" cy="750" rx="32" ry="11" transform="rotate(20 700 750)"/>
+            <ellipse cx="150" cy="800" rx="26" ry="9" transform="rotate(-45 150 800)"/>
+            <ellipse cx="550" cy="850" rx="30" ry="10" transform="rotate(35 550 850)"/>
+            <ellipse cx="100" cy="200" rx="24" ry="9" transform="rotate(-20 100 200)"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- ── Main Content ── -->
+      <div class="relative z-10 flex flex-col items-center text-center w-full max-w-lg">
+
+        <!-- Brand Logo -->
+        <div class="animate-entry delay-100 mb-10 sm:mb-14">
+          <span class="font-body text-xs sm:text-sm font-semibold tracking-editorial uppercase text-ink">
+            IVY moda
+          </span>
+        </div>
+
+        <!-- Title Stack: DAILY + Mood -->
+        <div class="animate-entry delay-200 title-stack mb-8 sm:mb-10">
+          <h1 class="title-daily text-7xl sm:text-8xl lg:text-[7.5rem] tracking-editorial select-none">
+            DAILY
+          </h1>
+          <span class="title-mood text-5xl sm:text-6xl lg:text-7xl select-none" aria-hidden="true">
+            Mood
+          </span>
+        </div>
+
+        <!-- Subtitle -->
+        <div class="animate-entry delay-300 mb-4 sm:mb-5">
+          <p class="font-body text-[10px] sm:text-xs font-medium tracking-luxury uppercase text-ink/80">
+            Slow down. Dress beautifully.
+          </p>
+        </div>
+
+        <!-- Description -->
+        <div class="animate-entry delay-400 mb-10 sm:mb-14">
+          <p class="font-body text-sm sm:text-base font-light text-muted leading-relaxed max-w-xs mx-auto">
+            Những khoảnh khắc bình yên giữa nhịp sống thành thị.
+          </p>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="animate-entry delay-500 mb-16 sm:mb-20">
+          <a href="#collection"
+             class="cta-btn group inline-flex items-center gap-3
+                    bg-ink text-white
+                    text-[10px] sm:text-xs font-medium tracking-editorial uppercase
+                    px-8 sm:px-10 py-4 sm:py-[18px]
+                    hover:bg-neutral-700
+                    transition-colors duration-300 ease-out
+                    focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
+            <span>Khám phá Daily Mood</span>
+            <span class="cta-arrow text-sm">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Season Badge -->
+        <div class="animate-entry delay-600">
+          <span class="line-separator font-body text-[9px] sm:text-[10px] font-medium tracking-luxury uppercase text-muted">
+            Spring Summer 2026 Collection
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Right Column: Model Image (25%) ── -->
+    <div class="model-col hidden lg:block w-1/4 relative overflow-hidden flex-shrink-0">
+      <img
+        src="assets/images/right.jpg"
+        alt="Người mẫu trong trang phục Daily Mood — phong cách tự nhiên bên bục gỗ"
+        class="model-image absolute inset-0 w-full h-full object-cover object-center"
+        loading="eager"
+      >
+      <!-- Subtle inner shadow for depth -->
+      <div class="absolute inset-0 shadow-[inset_20px_0_40px_-10px_rgba(0,0,0,0.08)]"></div>
+    </div>
+
+  </section>
+
+</body>
+</html>

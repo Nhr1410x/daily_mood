@@ -1,0 +1,92 @@
+/* ============================================
+   DAILY MOOD — Design Tokens
+   Monochrome editorial fashion design system
+   ============================================ */
+
+:root {
+  /* ── Colors ── */
+  --color-white:      #FFFFFF;
+  --color-ivory:      #F5F4F0;
+  --color-warm:       #EFE9E1;
+  --color-gray-light: #D9D9D9;
+  --color-gray:       #8C8C8C;
+  --color-gray-dark:  #555555;
+  --color-dark:       #1A1A1A;
+  --color-black:      #111111;
+  --color-charcoal:   #1E1E1E;
+  --color-brown:      #A68B6A;
+  --color-brown-light:#C4A882;
+
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body:    'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  --font-script:  'Pinyon Script', cursive;
+
+  /* ── Font Sizes (fluid) ── */
+  --text-xs:   clamp(0.6875rem, 0.65rem + 0.1vw, 0.75rem);
+  --text-sm:   clamp(0.75rem, 0.7rem + 0.15vw, 0.875rem);
+  --text-base: clamp(0.875rem, 0.83rem + 0.2vw, 1rem);
+  --text-lg:   clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+  --text-xl:   clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
+  --text-2xl:  clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --text-3xl:  clamp(1.75rem, 1.3rem + 1.5vw, 2.75rem);
+  --text-4xl:  clamp(2.25rem, 1.5rem + 2.5vw, 4rem);
+  --text-hero: clamp(3rem, 2rem + 4vw, 6rem);
+
+  /* ── Font Weights ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+
+  /* ── Letter Spacing ── */
+  --tracking-tight:    -0.02em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.08em;
+  --tracking-wider:    0.15em;
+  --tracking-widest:   0.25em;
+
+  /* ── Line Heights ── */
+  --leading-none:    1;
+  --leading-tight:   1.15;
+  --leading-snug:    1.35;
+  --leading-normal:  1.6;
+  --leading-relaxed: 1.8;
+
+  /* ── Spacing Scale (8px base) ── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.5rem;
+  --space-6:  2rem;
+  --space-7:  2.5rem;
+  --space-8:  3rem;
+  --space-10: 4rem;
+  --space-12: 5rem;
+  --space-16: 7rem;
+  --space-20: 9rem;
+
+  /* ── Layout ── */
+  --max-width:     1400px;
+  --content-width: 1200px;
+  --narrow-width:  800px;
+  --gutter:        clamp(1.25rem, 1rem + 1.5vw, 3rem);
+
+  /* ── Transitions ── */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast:  200ms;
+  --duration-base:  400ms;
+  --duration-slow:  700ms;
+
+  /* ── Shadows ── */
+  --shadow-sm:  0 1px 3px rgba(17, 17, 17, 0.06);
+  --shadow-md:  0 4px 16px rgba(17, 17, 17, 0.08);
+  --shadow-lg:  0 8px 32px rgba(17, 17, 17, 0.1);
+
+  /* ── Z-Index ── */
+  --z-header:  100;
+  --z-overlay: 200;
+  --z-modal:   300;
+}
