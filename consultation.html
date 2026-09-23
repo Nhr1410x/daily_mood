@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký Tư Vấn & Nhận Đặc Quyền VIP | BST Daily Mood — IVY moda</title>
+  <meta name="description"
+    content="Đăng ký tư vấn phong cách 1-on-1 và nhận mã ưu đãi VIP 15% độc quyền từ BST Daily Mood IVY moda. Trải nghiệm thử đồ phòng VIP tại hơn 80 showroom toàn quốc.">
+  <meta property="og:title" content="Đăng Ký Tư Vấn & Nhận Đặc Quyền VIP — IVY moda Daily Mood">
+  <meta property="og:description"
+    content="Nhận voucher 15% và dịch vụ Stylist riêng tư vấn chuẩn phom dáng cho BST Daily Mood.">
+  <meta property="og:image" content="assets/images/mood-city.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Pinyon+Script&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/consultation.css">
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════
+       (1) TOP ANNOUNCEMENT BAR
+       ════════════════════════════════════════ -->
+  <div class="announcement-bar">
+    <span>BST DAILY MOOD — ĐĂNG KÝ HÔM NAY NHẬN NGAY VOUCHER ĐẶC QUYỀN 15% CHO ĐƠN HÀNG ĐẦU TIÊN</span>
+    <a href="#consultationForm">ĐĂNG KÝ NGAY</a>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       (2) SITE HEADER
+       ════════════════════════════════════════ -->
+  <header class="product-header">
+    <div class="container product-header-inner">
+      <a href="index.html" class="brand-logo" aria-label="IVY moda trang chủ">
+        <span>IVY moda</span>
+        <svg class="brand-logo-icon" viewBox="0 0 24 24">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+        </svg>
+      </a>
+
+      <nav class="nav-links" aria-label="Menu chính">
+        <a href="index.html">DAILY MOOD BST</a>
+        <a href="product.html">ÁO KIỂU WHITE VERSE</a>
+        <a href="consultation.html" class="active">TƯ VẤN &amp; ĐẶC QUYỀN</a>
+        <a href="#">BỘ SƯU TẬP</a>
+        <a href="#">VỀ CHÚNG TÔI</a>
+      </nav>
+
+      <div class="header-tools">
+        <button class="tool-btn" aria-label="Tìm kiếm">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+        <a href="tel:02466623434" class="tool-btn" aria-label="Hotline tư vấn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </a>
+        <button class="tool-btn js-add-to-cart" aria-label="Giỏ hàng">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
+          </svg>
+          <span class="cart-count" id="cartCounter" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       (3) BREADCRUMBS
+       ════════════════════════════════════════ -->
+  <div class="breadcrumb-wrap">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li><a href="index.html">Daily Mood BST</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-current">Đăng Ký Tư Vấn &amp; Nhận Đặc Quyền VIP</li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- ════════════════════════════════════════
+         (4) MAIN CONSULTATION STAGE (SPLIT SCREEN)
+         ════════════════════════════════════════ -->
+    <section class="consultation-section">
+      <div class="container">
+        <div class="consultation-grid">
+
+          <!-- ── Column 1: Editorial Showcase & Privileges ── -->
+          <aside class="editorial-showcase" aria-label="Thông tin đặc quyền VIP">
+            <div class="editorial-image-box">
+              <img src="assets/images/wv-3.webp" alt="Người mẫu BST Daily Mood IVY moda thanh lịch dạo phố">
+              <span class="editorial-image-badge">PRIVATE STYLING • VIP PRIVILEGE</span>
+            </div>
+
+            <div class="editorial-content">
+              <span class="editorial-script-quote">Find your daily mood</span>
+              <h2 class="editorial-heading">Tư Vấn Phong Cách &amp; Trải Nghiệm Độc Quyền</h2>
+              <p class="editorial-desc">
+                Mỗi thiết kế trong BST Daily Mood được chăm chút để tôn vinh sự thanh lịch tự nhiên của người phụ nữ
+                hiện
+                đại. Hãy để chuyên viên phong cách IVY moda lắng nghe vóc dáng và mong muốn của bạn để đề xuất trang
+                phục
+                hoàn hảo nhất.
+              </p>
+
+              <div class="privilege-title">Đặc quyền dành riêng cho bạn</div>
+              <ul class="privilege-list">
+                <li class="privilege-item">
+                  <div class="privilege-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </div>
+                  <div class="privilege-info">
+                    <h4>Voucher 15% Độc Quyền</h4>
+                    <p>Áp dụng ngay cho đơn hàng đầu tiên thuộc BST Daily Mood khi đăng ký hôm nay.</p>
+                  </div>
+                </li>
+
+                <li class="privilege-item">
+                  <div class="privilege-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                  </div>
+                  <div class="privilege-info">
+                    <h4>Stylist 1-on-1 Chuẩn Phom</h4>
+                    <p>Tư vấn chọn size, chất liệu và bảng màu hài hòa với làn da và tỷ lệ vóc dáng của bạn.</p>
+                  </div>
+                </li>
+
+                <li class="privilege-item">
+                  <div class="privilege-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                  </div>
+                  <div class="privilege-info">
+                    <h4>Phòng Thử Đồ VIP Riêng Tư</h4>
+                    <p>Đặt lịch trước tại hơn 80 Showroom trên toàn quốc, trang phục yêu thích được chuẩn bị sẵn sàng.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- ── Column 2: Lead Information Form Card ── -->
+          <div class="form-card" id="formCard">
+
+            <!-- Active Form Content -->
+            <form id="consultationForm" novalidate>
+              <div class="form-header">
+                <span class="form-badge">DAILY MOOD • SPRING SUMMER 2026</span>
+                <h1 class="form-title">ĐĂNG KÝ TƯ VẤN &amp; NHẬN ƯU ĐÃI VIP</h1>
+                <p class="form-subtitle">
+                  Vui lòng chia sẻ mong muốn của bạn để chuyên viên thời trang IVY moda phục vụ chu đáo nhất.
+                </p>
+              </div>
+
+              <!-- Fieldset 1: Contact Info -->
+              <div class="form-fieldset">
+                <div class="fieldset-legend">
+                  <span class="fieldset-number">1</span>
+                  <span>Thông tin liên hệ của bạn</span>
+                </div>
+
+                <div class="input-row">
+                  <div class="form-group">
+                    <label for="clientName">
+                      <span>Họ và tên <span class="label-req">*</span></span>
+                    </label>
+                    <input type="text" id="clientName" class="form-input" placeholder="Ví dụ: Nguyễn Thị Xuân Lan"
+                      autocomplete="name" required>
+                    <div class="error-msg">Vui lòng nhập họ tên của bạn.</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="clientPhone">
+                      <span>Số điện thoại <span class="label-req">*</span></span>
+                    </label>
+                    <input type="tel" id="clientPhone" class="form-input" placeholder="Ví dụ: 0912 345 678"
+                      autocomplete="tel" required>
+                    <div class="error-msg">Số điện thoại không hợp lệ.</div>
+                  </div>
+                </div>
+
+                <div class="input-row">
+                  <div class="form-group">
+                    <label for="clientEmail">
+                      <span>Địa chỉ Email</span>
+                      <span class="label-hint">(Nhận Lookbook điện tử)</span>
+                    </label>
+                    <input type="email" id="clientEmail" class="form-input" placeholder="xunlan.due@example.com"
+                      autocomplete="email">
+                    <div class="error-msg">Địa chỉ email chưa chính xác.</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="preferredCity">
+                      <span>Tỉnh / Thành phố</span>
+                      <span class="label-hint">(Khu vực của bạn)</span>
+                    </label>
+                    <select id="preferredCity" class="form-select">
+                      <option value="Hà Nội">Hà Nội</option>
+                      <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                      <option value="Đà Nẵng">Đà Nẵng</option>
+                      <option value="Hải Phòng">Hải Phòng</option>
+                      <option value="Quảng Ninh">Quảng Ninh</option>
+                      <option value="Cần Thơ">Cần Thơ</option>
+                      <option value="Khác">Tỉnh / Thành phố khác</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fieldset 2: Style Interests -->
+              <div class="form-fieldset">
+                <div class="fieldset-legend">
+                  <span class="fieldset-number">2</span>
+                  <span>Phong cách &amp; Thiết kế quan tâm</span>
+                </div>
+
+                <!-- Hidden inputs for chips -->
+                <input type="hidden" id="selectedStyles" value="Công sở thanh lịch">
+                <input type="hidden" id="selectedProducts" value="Áo kiểu White Verse">
+
+                <div class="form-group">
+                  <label>
+                    <span>Phong cách bạn yêu thích</span>
+                    <span class="label-hint">(Có thể chọn nhiều)</span>
+                  </label>
+                  <div class="tag-chips-wrap">
+                    <div class="tag-chip js-chip-style is-selected" data-value="Công sở thanh lịch">
+                      <span class="chip-check">✓</span>
+                      <span>Công sở thanh lịch</span>
+                    </div>
+                    <div class="tag-chip js-chip-style" data-value="Dạo phố cuối tuần">
+                      <span class="chip-check">✓</span>
+                      <span>Dạo phố cuối tuần</span>
+                    </div>
+                    <div class="tag-chip js-chip-style" data-value="Dạ tiệc &amp; Sự kiện">
+                      <span class="chip-check">✓</span>
+                      <span>Dạ tiệc &amp; Sự kiện</span>
+                    </div>
+                    <div class="tag-chip js-chip-style" data-value="Tối giản đương đại">
+                      <span class="chip-check">✓</span>
+                      <span>Tối giản đương đại</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>
+                    <span>Mẫu thiết kế bạn đang để mắt</span>
+                    <span class="label-hint">(Trong BST Daily Mood)</span>
+                  </label>
+                  <div class="tag-chips-wrap">
+                    <div class="tag-chip js-chip-product is-selected" data-value="Áo kiểu White Verse">
+                      <span class="chip-check">✓</span>
+                      <span>Áo kiểu White Verse</span>
+                    </div>
+                    <div class="tag-chip js-chip-product" data-value="Đầm peplum ren hoa">
+                      <span class="chip-check">✓</span>
+                      <span>Đầm peplum ren hoa</span>
+                    </div>
+                    <div class="tag-chip js-chip-product" data-value="Set Blazer cao cấp">
+                      <span class="chip-check">✓</span>
+                      <span>Set Blazer cao cấp</span>
+                    </div>
+                    <div class="tag-chip js-chip-product" data-value="Quần ống suông hack dáng">
+                      <span class="chip-check">✓</span>
+                      <span>Quần ống suông hack dáng</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fieldset 3: Size & Measurements -->
+              <div class="form-fieldset">
+                <div class="fieldset-legend">
+                  <span class="fieldset-number">3</span>
+                  <span>Kích cỡ &amp; Vóc dáng</span>
+                </div>
+
+                <input type="hidden" id="selectedSize" value="S">
+
+                <div class="form-group">
+                  <label>
+                    <span>Size trang phục thường mặc</span>
+                    <span class="label-hint">(Chuẩn IVY moda)</span>
+                  </label>
+                  <div class="tag-chips-wrap">
+                    <div class="tag-chip js-chip-size is-selected" data-value="S">Size S (44 - 48kg)</div>
+                    <div class="tag-chip js-chip-size" data-value="M">Size M (49 - 53kg)</div>
+                    <div class="tag-chip js-chip-size" data-value="L">Size L (54 - 58kg)</div>
+                    <div class="tag-chip js-chip-size" data-value="XL">Size XL (59 - 63kg)</div>
+                    <div class="tag-chip js-chip-size" data-value="Cần tư vấn">Chưa rõ / Cần tư vấn</div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="heightWeight">
+                    <span>Chiều cao / Cân nặng / Số đo</span>
+                    <span class="label-hint">(Giúp Stylist chọn trước phom áo chuẩn nhất)</span>
+                  </label>
+                  <input type="text" id="heightWeight" class="form-input" placeholder="Ví dụ: 1m62, 50kg, eo 66cm">
+                </div>
+              </div>
+
+              <!-- Fieldset 4: Consultation Channel -->
+              <div class="form-fieldset">
+                <div class="fieldset-legend">
+                  <span class="fieldset-number">4</span>
+                  <span>Hình thức nhận tư vấn thuận tiện</span>
+                </div>
+
+                <div class="radio-options-grid">
+                  <div class="radio-card js-radio-channel is-active">
+                    <input type="radio" name="consultationChannel" value="zalo" checked>
+                    <div class="radio-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8">
+                        <path
+                          d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                      </svg>
+                    </div>
+                    <span class="radio-title">Nhắn tin Zalo</span>
+                    <span class="radio-desc">Gửi ảnh mẫu &amp; tư vấn kín đáo</span>
+                  </div>
+
+                  <div class="radio-card js-radio-channel">
+                    <input type="radio" name="consultationChannel" value="call">
+                    <div class="radio-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8">
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                    </div>
+                    <span class="radio-title">Gọi điện thoại</span>
+                    <span class="radio-desc">Trao đổi trực tiếp nhanh chóng</span>
+                  </div>
+
+                  <div class="radio-card js-radio-channel">
+                    <input type="radio" name="consultationChannel" value="showroom">
+                    <div class="radio-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                      </svg>
+                    </div>
+                    <span class="radio-title">Thử tại Showroom</span>
+                    <span class="radio-desc">Đặt phòng VIP chuẩn bị trước</span>
+                  </div>
+                </div>
+
+                <!-- Showroom selection (Revealed if 'showroom' is selected) -->
+                <div class="showroom-picker" id="showroomPicker">
+                  <div class="input-row">
+                    <div class="form-group" style="margin-bottom: 0;">
+                      <label for="preferredShowroom">
+                        <span>Chọn cơ sở Showroom gần bạn <span class="label-req">*</span></span>
+                      </label>
+                      <select id="preferredShowroom" class="form-select">
+                        <option value="">-- Chọn Showroom thuận tiện --</option>
+                        <option value="Hà Nội - 248 Bà Triệu, Hai Bà Trưng">Hà Nội — 248 Bà Triệu, Hai Bà Trưng</option>
+                        <option value="Hà Nội - 34 Quang Trung, Hoàn Kiếm">Hà Nội — 34 Quang Trung, Hoàn Kiếm</option>
+                        <option value="Hà Nội - Vincom Mega Mall Smart City">Hà Nội — Vincom Mega Mall Smart City
+                        </option>
+                        <option value="TP.HCM - 142 Võ Thị Sáu, Quận 3">TP.HCM — 142 Võ Thị Sáu, Quận 3</option>
+                        <option value="TP.HCM - 391 Quang Trung, Gò Vấp">TP.HCM — 391 Quang Trung, Gò Vấp</option>
+                        <option value="Đà Nẵng - 150 Nguyễn Văn Linh">Đà Nẵng — 150 Nguyễn Văn Linh</option>
+                      </select>
+                      <div class="error-msg">Vui lòng chọn showroom bạn muốn ghé thử.</div>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0;">
+                      <label for="appointmentDate">
+                        <span>Ngày dự kiến ghé thăm</span>
+                      </label>
+                      <input type="date" id="appointmentDate" class="form-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 14px;">
+                  <label for="clientNotes">
+                    <span>Ghi chú thêm hoặc câu hỏi đặc biệt</span>
+                    <span class="label-hint">(Tùy chọn)</span>
+                  </label>
+                  <textarea id="clientNotes" class="form-textarea"
+                    placeholder="Ví dụ: Mình cần trang phục cho sự kiện tối thứ 7, ưu tiên gam màu sáng và thanh lịch..."></textarea>
+                </div>
+              </div>
+
+              <!-- Privacy Policy Agreement -->
+              <div class="checkbox-agreement">
+                <input type="checkbox" id="privacyAgreement" checked required>
+                <label for="privacyAgreement">
+                  Tôi đồng ý để chuyên viên IVY moda liên hệ tư vấn qua số điện thoại/Zalo đã cung cấp và nhận thông tin
+                  ưu đãi độc quyền từ BST Daily Mood.
+                </label>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-submit-consultation" id="submitBtn">
+                <span class="btn-spinner"></span>
+                <span class="btn-text">GỬI THÔNG TIN &amp; NHẬN ƯU ĐÃI VIP</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+
+              <div class="security-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                <span>IVY moda cam kết bảo mật 100% dữ liệu thông tin cá nhân của quý khách.</span>
+              </div>
+            </form>
+
+            <!-- Success State Card (Shown after submission) -->
+            <div class="success-card" id="successCard" role="region" aria-live="polite">
+              <div class="success-icon-wrap">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </div>
+
+              <h2 class="success-title">TIẾP NHẬN THÀNH CÔNG</h2>
+              <p class="success-message">
+                Xin cảm ơn <strong id="successClientName" style="color: var(--color-ink);">Quý khách</strong>. Chuyên
+                viên tư vấn phong cách của IVY moda sẽ liên hệ đến số <strong id="successPhone"
+                  style="color: var(--color-ink);"></strong> trong vòng 15–30 phút để hỗ trợ chi tiết.
+              </p>
+
+              <!-- VIP Voucher Code Ticket -->
+              <div class="voucher-ticket">
+                <div class="voucher-ticket-header">
+                  <span class="voucher-badge">MÃ ƯU ĐÃI VIP CỦA BẠN (-15%)</span>
+                  <span style="font-size: 11px; color: var(--color-gray);">Hạn dùng: 30 ngày</span>
+                </div>
+                <div class="voucher-code-row">
+                  <span class="voucher-code" id="successVoucherCode">DM-VIP8899</span>
+                  <button type="button" class="btn-copy-code" id="copyVoucherBtn" aria-label="Sao chép mã voucher">
+                    SAO CHÉP MÃ
+                  </button>
+                </div>
+                <div class="voucher-note">
+                  * Áp dụng khi mua sắm trực tiếp tại hệ thống Showroom hoặc đặt hàng trực tuyến trên website IVY moda
+                  cho BST Daily Mood.
+                </div>
+              </div>
+
+              <div class="success-actions">
+                <a href="product.html" class="btn-success-action btn-success-primary">
+                  KHÁM PHÁ ÁO KIỂU WHITE VERSE
+                </a>
+                <a href="index.html" class="btn-success-action btn-success-outline">
+                  VỀ TRANG BST DAILY MOOD
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         (5) VIP TESTIMONIALS SECTION
+         ════════════════════════════════════════ -->
+    <section class="vip-reviews-section">
+      <div class="container">
+        <div class="vip-reviews-header">
+          <h3>Trải Nghiệm Từ Khách Hàng VIP</h3>
+          <p>Hơn 1.200 quý cô đã trải nghiệm dịch vụ tư vấn phom dáng và thử đồ riêng tư cùng BST Daily Mood.</p>
+        </div>
+
+        <div class="vip-reviews-grid">
+          <div class="vip-review-card">
+            <div>
+              <div class="vip-review-stars">★★★★★</div>
+              <p class="vip-review-text">
+                "Mình rất ngại mua đồ ren online vì sợ dặm ngứa hoặc không vừa eo. Nhờ chuyên viên IVY tư vấn tận tình
+                qua Zalo, gửi video cận cảnh chất vải và gợi ý chuẩn size S mà chiếc áo White Verse mặc lên người chuẩn
+                như may đo riêng."
+              </p>
+            </div>
+            <div class="vip-review-author">
+              <div class="vip-review-avatar">PL</div>
+              <div class="vip-review-meta">
+                <strong>Phương Linh</strong>
+                <span>Trưởng phòng Truyền thông • Hà Nội</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="vip-review-card">
+            <div>
+              <div class="vip-review-stars">★★★★★</div>
+              <p class="vip-review-text">
+                "Đặt lịch thử trước tại Showroom Bà Triệu, đến nơi các bạn đã chuẩn bị sẵn phòng VIP và 3 set đồ phối
+                hoàn chỉnh cùng phụ kiện. Rất chuyên nghiệp, tiết kiệm thời gian cho những người bận rộn như mình."
+              </p>
+            </div>
+            <div class="vip-review-author">
+              <div class="vip-review-avatar">TM</div>
+              <div class="vip-review-meta">
+                <strong>Thanh Mai</strong>
+                <span>Doanh nhân • Showroom Hai Bà Trưng</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="vip-review-card">
+            <div>
+              <div class="vip-review-stars">★★★★★</div>
+              <p class="vip-review-text">
+                "Ưu đãi 15% VIP áp dụng ngay rất hời! Chất lượng ren hoa nổi mềm mại khác biệt hẳn so với các sản phẩm
+                trên thị trường. Sẽ tiếp tục là khách hàng thân thiết của dòng sản phẩm Daily Mood."
+              </p>
+            </div>
+            <div class="vip-review-author">
+              <div class="vip-review-avatar">HA</div>
+              <div class="vip-review-meta">
+                <strong>Hồng Ánh</strong>
+                <span>Kiến trúc sư • TP. Hồ Chí Minh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         (6) FAQ SECTION
+         ════════════════════════════════════════ -->
+    <section class="consultation-faq-section">
+      <div class="container">
+        <div class="faq-header">
+          <h3>Câu Hỏi Thường Gặp</h3>
+          <p>Mọi thắc mắc của bạn về dịch vụ tư vấn và quyền lợi ưu đãi</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+              <span>Dịch vụ tư vấn phong cách có mất phí không?</span>
+            </div>
+            <div class="faq-answer">
+              Dịch vụ tư vấn phong cách 1-on-1 và đặt hẹn phòng thử đồ VIP hoàn toàn miễn phí, được IVY moda thiết kế
+              nhằm mang lại trải nghiệm thời trang chu đáo nhất cho khách hàng.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+              <span>Voucher ưu đãi 15% áp dụng như thế nào?</span>
+            </div>
+            <div class="faq-answer">
+              Mã voucher có giá trị giảm 15% cho mọi thiết kế trong BST Daily Mood (bao gồm Áo kiểu White Verse). Bạn có
+              thể nhập mã khi đặt hàng online hoặc cung cấp mã cho nhân viên thu ngân tại Showroom.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+              <span>Nếu trang phục không vừa vặn có được đổi trả không?</span>
+            </div>
+            <div class="faq-answer">
+              IVY moda áp dụng chính sách đổi hàng trong vòng 15 ngày trên toàn hệ thống showroom. Đối với đơn hàng giao
+              tận nơi, bạn được quyền kiểm tra và thử đồ trước khi thanh toán.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+              <span>Sau bao lâu chuyên viên sẽ liên hệ lại?</span>
+            </div>
+            <div class="faq-answer">
+              Đội ngũ Stylist sẽ kết nối lại qua số điện thoại hoặc Zalo bạn đăng ký trong vòng 15–30 phút trong giờ làm
+              việc (08:30 – 21:30 hàng ngày).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════════════════════════
+       (7) TOAST NOTIFICATION
+       ════════════════════════════════════════ -->
+  <div class="toast-msg" id="toastMsg" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+      <polyline points="22 4 12 14.01 9 11.01" />
+    </svg>
+    <span id="toastText">Đăng ký tư vấn thành công!</span>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       (8) SITE FOOTER
+       ════════════════════════════════════════ -->
+  <footer class="product-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>IVY MODA</h4>
+          <p style="font-size: 13px; line-height: 1.8; margin-bottom: 16px;">
+            Thương hiệu thời trang nữ cao cấp hàng đầu Việt Nam. Khơi nguồn cảm hứng thanh lịch và tự tin cho phụ nữ
+            hiện đại qua từng thiết kế tinh xảo.
+          </p>
+          <p style="font-size: 12px; color: #aaa;">Hotline: 024 6662 3434 • Email: saleadmin@ivy.com.vn</p>
+        </div>
+        <div class="footer-col">
+          <h4>CHÍNH SÁCH</h4>
+          <ul>
+            <li><a href="#">Chính sách đổi trả 15 ngày</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách giao hàng</a></li>
+            <li><a href="#">Bảo mật thông tin</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>HỆ THỐNG</h4>
+          <ul>
+            <li><a href="#">Tìm Showroom gần nhất</a></li>
+            <li><a href="index.html">Bộ sưu tập Daily Mood</a></li>
+            <li><a href="consultation.html">Đăng ký tư vấn VIP</a></li>
+            <li><a href="product.html">Áo kiểu White Verse</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+          <p style="font-size: 13px; margin-bottom: 12px;">Đăng ký để nhận thông tin ưu đãi mới nhất từ IVY moda:</p>
+          <div style="display: flex; gap: 8px;">
+            <input type="email" placeholder="Nhập email của bạn..." class="form-input"
+              style="height: 40px; background: #222; border-color: #444; color: #fff;">
+            <button type="button"
+              style="background: var(--color-gold); color: #fff; padding: 0 16px; font-size: 12px; font-weight: 600;">GỬI</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 IVY moda. All rights reserved. Bản quyền thuộc về Công ty Cổ phần Dự Kim.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script src="js/consultation.js"></script>
+</body>
+
+</html>
